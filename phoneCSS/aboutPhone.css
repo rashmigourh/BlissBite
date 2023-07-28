@@ -1,0 +1,42 @@
+@media screen and (max-device-width: 768px) {
+    * {
+        overflow-x: hidden;
+      }
+      body {
+        overflow-x: hidden;
+      }
+      .heading ul a{
+        text-align: center;
+      }
+      /* ABOUT US */
+.text{
+      margin: 30px;
+      margin-left: 10%;
+      font-size: 1.2rem;
+  }
+  .col-2{
+    width: 100%;
+  }
+    .Row{
+      display: flex;
+      flex-direction: column;
+  }
+  .Row .cards{
+      padding: 10px;
+  }
+  .text-area p {
+      font-size: 1.5rem;
+      margin-left: 10px;
+      margin-bottom: 30px;
+  }
+  .f-img img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px 50px;
+  }
+  .aboutDetail {
+margin-top: 15%;
+padding: 5px;
+    }
+    }
