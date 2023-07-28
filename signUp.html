@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign In</title>
+    <link rel="stylesheet" href="fonticon/css/all.css">
+    <link rel="stylesheet" href="CSS/Login.css">
+    <link rel="stylesheet" href="phoneCSS/formPhone.css">
+</head>
+
+<body>
+    <form action="#" onsubmit=" return validatePassword()" name="passwordForm" class="form" method="post" id="form">
+    <div class="form-container">
+        <div class="log_head">
+        <h1>SignIn</h1>
+        <a href="index.html"><i class="fa-sharp fa-solid fa-xmark" ></i></a> <!-- cross logo-->
+    </div>
+        <form id="signin-form">
+            <div class="form-group">
+                <input type="text" id="username-sign" name="username-sign" required placeholder="Username">
+            </div>
+
+            <div class="form-group">
+                <input type="password" id="password-sign" name="password-sign" required placeholder="Password"
+                    style="margin-left: 25px;">
+                <span class="eye-icon" onclick="toggleVisibile()">
+                    <i class="fa-solid fa-eye-slash" style="color: #00040a;"></i>
+                </span>
+            </div>
+
+
+            <div class="form-group">
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm Password"
+                    style="margin-left: 25px;">
+                <span class="eyeIcon" onclick="togglePasswordVisibile()">
+                    <i class="fa-solid fa-eye-slash" style="color: #00040a;"></i>
+                </span>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Sign in</button>
+            </div>
+            <div id="error-msg" class="error"></div>
+            <div class="fg">
+                <h3>Have an account already? <a href="Login.html" style="color: rgb(44, 44, 205);">Login</a></h3>
+            </div>
+        </form>
+        <div class="form-group">
+            <button type="submit"><i class="fa-brands fa-facebook" style="color: #fbfcfe;"></i>Login with Google</button>
+        </div>
+
+        <div class="form-group">
+            <button type="submit"><i class="fa-brands fa-google" style="color: #fcfcfc;"></i> Login with Facebook</button>
+        </div>
+    </div>
+</form>
+<script src="javascript/javascript.js"></script>
+</body>
+
+</html>
