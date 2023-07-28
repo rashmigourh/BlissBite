@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlissBite</title>
+    <link rel="stylesheet" href="CSS/serviceNavbar.css">
+    <link rel="stylesheet" href="CSS/delivery.css">
+    <link rel="stylesheet" href="CSS/foodcards.css">
+    <link rel="stylesheet" href="fonticon/css/all.css">
+    <link rel="stylesheet" href="phoneCSS/serviceNavbarPhone.css">
+    <link rel="stylesheet" href="phoneCSS/phone.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="BlissBite/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="BlissBite/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="BlissBite/favicon-16x16.png">
+    <link rel="manifest" href="BlissBite/site.webmanifest">
+    <link rel="mask-icon" href="BlissBite/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="contain">
+    <nav id="nav">
+        <img class="logo" src="BlissBite-modified.png" alt="BlissBite">
+        <input type='checkbox' id='check' />
+        <label for="check" class="open-Menu"><i class="fas fa-bars"></i></label>
+        <span class="menu">
+            <div id="marker"></div>
+            <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            <a href="index.html">Home</a><hr>
+            <a href="service.html">Services</a> <hr>
+            <a href="aboutUs.html">About Us</a> <hr>
+            <a href="contactUs.html">Contact Us</a> <hr>
+            <a href="Login.html">Log in</a> <hr>
+            <a href="signUp.html">Sign up</a>
+        </span>
+        <div class="shopping-cart">
+            <div class="sum-prices">
+                <!--Shopping cart logo-->
+                <i class="fas fa-shopping-cart shoppingCartButton"></i>
+                <!--The total prices of products in the shopping cart -->
+                <h6 id="sum-prices"></h6>
+            </div>
+        </div>
+    </nav>
+</div>
+    <div class="service">
+    <h1>SERVICES</h1>
+</div>
+
+<!-- shopping cart -->
+<div class="producstOnCart">
+    <div class="overlay" id="overlay"></div>
+    <div class="top">
+        <button id="closeButton">
+            <i class="fas fa-times-circle"></i>
+        </button>
+        <h3>Cart</h3>
+    </div>
+    <ul id="buyItems">
+        <h4 class="empty">Your shopping cart is empty</h4>
+        <!-- Example: <li class="buyItem">
+        <img src="order now near you/Burger.jpg" />
+            <div>
+                <h5>Products Name</h5>
+                <h6>$199</h6>
+                <div>
+                    <button class="button-minus" data-id='1'>-</button>
+                    <span class="countOfProduct">1</span>
+                    <button class="button-plus" data-id='1'>+</button>
+                </div>
+            </div>
+        </li> -->
+    </ul>
+    <div class="cart-button">
+    <button class="btn checkout hidden">Check out</button>
+    <button class="btn clear hidden" onclick="clearCart()">Clear</button>
+</div>
+</div>
+
+<div class="foodRow">  <!--products -->
+    <div class="cards1 col-4  product-under"><!-- product-under -->
+        <div class="foodImage">
+            <img src="food_images/order now near you/PizzaHut.jpg">
+        </div>
+        <div class="namePrice">
+            <h3 class="productName">Domino's Pizza</h3>
+           <h6 class="rupee"> &#8377;<span class="priceValue">90</span></h6>
+        </div>
+        <p>Pizza, Cheesy, FastFood, NonVegg </p>
+        <div class="star-4">
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+        </div>
+        <div class="btn-cards">
+            <button class="addToCart" data-product-id="1">Order Now</button>
+        </div>
+    </div>
+
+    <div class="cards1 col-4  product-under">
+        <div class="foodImage">
+            <img src="food_images/order now near you/ChickenWings.jpg">
+        </div>
+        <div class="namePrice">
+            <h3  class="productName">Chicken Wings</h3>
+            <h6 class="rupee"> &#8377;<span class="priceValue">400</span></h6>
+        </div>
+        <p>KFC, FastFood, CrispyCrunch, NonVegg</p>
+        <div class="star-4">
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+        </div>
+        <div class="btn-cards">
+            <button class="addToCart" data-product-id="2">Order Now</button>
+        </div>
+    </div>
+
+    <div class="cards1 col-4  product-under"> <!--child div-->
+        <div class="foodImage">
+            <img src="food_images/order now near you/Burger.jpg">
+        </div>
+        <div class="namePrice">
+            <h3 class="productName">Burger Giant</h3>
+            <h6 class="rupee"> &#8377;<span class="priceValue">150</span></h6>
+        </div>
+        <p>Burger, BurgerKing, GiantBurger, Vegg</p>
+        <div class="star-5">
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+        </div>
+        <div class="btn-cards">
+            <button class="addToCart" data-product-id="3">Order Now</button>
+        </div>
+    </div>
+
+    <div class="cards1 col-4  product-under"> <!--child div-->
+        <div class="foodImage">
+            <img src="food_images/order now near you/spring-rolls.jpg">
+        </div>
+        <div class="namePrice">
+            <h3 class="productName">Spring Roll</h3>
+             <h6 class="rupee"> &#8377;<span class="priceValue" class="priceValue">200</span></h6>
+        </div>
+        <p>Delicious, Soft,Tasty, Vegg, </p>
+        <div class="star-3">
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+        </div>
+        <div class="btn-cards">
+            <button class="addToCart" data-product-id="4">Order Now</button>
+        </div>
+    </div>
+    </div>
+
+<!-- ORDER NOW 2-->
+<div class="foodRow"> <!--parent div-->
+    <div class="cards1 col-4 product-under"> <!--child div-->
+        <div class="foodImage">
+            <img src="food_images/South indian/Dosa.jpg">
+        </div>
+        <div class="namePrice">
+            <h3 class="productName" class="productName">Masala Dosa</h3>
+            <h6 class="rupee"> &#8377;<span class="priceValue">350</span></h6>
+        </div>
+        <p>Paper-thin, Crispy, Masala Dosa </p>
+        <div class="star-5">
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+        </div>
+        <div class="btn-cards product-under">
+            <button class="addToCart" data-product-id="5">Order Now</button>
+        </div>
+    </div>
+
+    <div class="cards1 col-4 product-under"> <!--child div-->
+        <div class="foodImage">
+            <img src="food_images/South indian/Idli Sambhar.jpg">
+        </div>
+        <div class="namePrice">
+            <h3 class="productName" class="productName">Idli Sambhar</h3>
+            <h6 class="rupee"> &#8377;<span class="priceValue">70</span></h6>
+        </div>
+        <p>Steamed Rice Cakes With Sambhar</p>
+        <div class="star-3">
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+        </div>
+        <div class="btn-cards">
+            <button class="addToCart" data-product-id="6">Order Now</button>
+        </div>
+    </div>
+
+    <div class="cards1 col-4 product-under"> <!--child div-->
+        <div class="foodImage">
+            <img src="food_images/South indian/Medu_Vadas.jpg">
+        </div>
+        <div class="namePrice">
+            <h3 class="productName" class="productName">Medu Vadas</h3>
+            <h6 class="rupee"> &#8377;<span class="priceValue">70</span></h6>
+        </div>
+        <p>Savoury Doughnuts, With Nariyal Chatni</p>
+        <div class="star-3">
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+        </div>
+        <div class="btn-cards">
+            <button class="addToCart" data-product-id="7">Order Now</button>
+        </div>
+    </div>
+
+    <div class="cards1 col-4 product-under"> <!--child div-->
+        <div class="foodImage">
+            <img src="food_images/South indian/Yellow Rice.jpg">
+        </div>
+        <div class="namePrice">
+            <h3 class="productName" class="productName">Spring Roll</h3>
+            <h6 class="rupee"> &#8377;<span class="priceValue">150</span></h6>
+        </div>
+        <p>South Indian Style, Masaledaar, Spicy</p>
+        <div class="star-5">
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+        </div>
+        <div class="btn-cards">
+            <button class="addToCart" data-product-id="8">Order Now</button>
+        </div>
+    </div>
+</div>
+
+<!-- ORDER NOW 3-->
+<div class="foodRow"> <!--parent div-->
+
+    <div class="cards1 col-4 product-under"> <!--child div-->
+        <div class="foodImage">
+            <img src="food_images/namaste Indian cusine/choleBHature.jpg">
+        </div>
+        <div class="namePrice">
+            <h3 class="productName">Chole Bhature</h3>
+            <h6 class="rupee"> &#8377;<span class="priceValue">100</span></h6>
+        </div>
+        <p>Bikaneer, Masaledaar, IndianFood, Vegg </p>
+        <div class="star-5">
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+        </div>
+        <div class="btn-cards">
+            <button class="addToCart" data-product-id="9">Order Now</button>
+        </div>
+    </div>
+
+    <div class="cards1 col-4 product-under"> <!--child div-->
+        <div class="foodImage">
+            <img src="food_images/namaste Indian cusine/ShahiPaneer.jpg">
+        </div>
+        <div class="namePrice">
+            <h3 class="productName">Shahi Paneer</h3>
+            <h6 class="rupee"> &#8377;<span class="priceValue">250</span></h6>
+        </div>
+        <p>Haldiram, Tasty, IndianFood, Vegg</p>
+        <div class="star-4">
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+        </div>
+        <div class="btn-cards">
+            <button class="addToCart" data-product-id="10">Order Now</button>
+        </div>
+    </div>
+
+    <div class="cards1 col-4 product-under"> <!--child div-->
+        <div class="foodImage">
+            <img src="food_images/namaste Indian cusine/rajma-chawal-.jpg">
+        </div>
+        <div class="namePrice">
+            <h3 class="productName">Rajma Chaval</h3>
+            <h6 class="rupee"> &#8377;<span class="priceValue">70</span></h6>
+        </div>
+        <p>Heera Sweets, Delicious, IndianFood, Vegg</p>
+        <div class="star-3">
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+        </div>
+        <div class="btn-cards">
+            <button class="addToCart" data-product-id="11">Order Now</button>
+        </div>
+    </div>
+
+    <div class="cards1 col-4 product-under"> <!--child div-->
+        <div class="foodImage">
+            <img src="food_images/namaste Indian cusine/Tandoori-Soya-Chaap.jpg">
+        </div>
+        <div class="namePrice">
+            <h3 class="productName">Soya Chaap</h3>
+            <h6 class="rupee"> &#8377;<span class="priceValue">200</span></h6>
+        </div>
+        <p>Haldiram, Tandoori,IndianFood, Vegg, </p>
+        <div class="star-5">
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+        </div>
+        <div class="btn-cards">
+            <button class="addToCart" data-product-id="12">Order Now</button>
+        </div>
+    </div>
+
+</div>
+
+<!-- ORDER NOW 4-->
+
+<div class="foodRow"> <!--parent div-->
+    <div class="cards1 col-4 product-under"> <!--child div-->
+        <div class="foodImage">
+            <img src="food_images/Dessert/CupCakes.jpg">
+        </div>
+        <div class="namePrice">
+            <h3 class="productName" class="productName">Cupcakes</h3>
+            <h6 class="rupee"> &#8377;<span class="priceValue">350</span></h6>
+        </div>
+        <p>Pizza, Cheesy, FastFood, NonVegg </p>
+        <div class="star-4">
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+        </div>
+        <div class="btn-cards">
+            <button class="addToCart" data-product-id="13">Order Now</button>
+        </div>
+    </div>
+
+    <div class="cards1 col-4 product-under"> <!--child div-->
+        <div class="foodImage">
+            <img src="food_images/Dessert/red-velvet-heart-cake.jpg">
+        </div>
+        <div class="namePrice">
+            <h3 class="productName" class="productName">Red Velvet Cake</h3>
+            <h6 class="rupee"> &#8377;<span class="priceValue">350</span></h6>
+        </div>
+        <p>Heart Shape, Cremy Iced, RedVelvet</p>
+        <div class="star-5">
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+        </div>
+        <div class="btn-cards">
+            <button class="addToCart" data-product-id="14">Order Now</button>
+        </div>
+    </div>
+
+    <div class="cards1 col-4 product-under"> <!--child div-->
+        <div class="foodImage">
+            <img src="food_images/Dessert/Ice-cream.jpg">
+        </div>
+        <div class="namePrice">
+            <h3 class="productName" class="productName"> IceCream</h3>
+            <h6 class="rupee"> &#8377;<span class="priceValue">150</span></h6>
+        </div>
+        <p>Choclatety, Creamy, Delicious</p>
+        <div class="star-5">
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+        </div>
+        <div class="btn-cards">
+            <button class="addToCart" data-product-id="15">Order Now</button>
+        </div>
+    </div>
+
+    <div class="cards1 col-4 product-under"> <!--child div-->
+        <div class="foodImage">
+            <img src="food_images/Dessert/Rice-Kheer.jpg">
+        </div>
+        <div class="namePrice">
+            <h3 class="productName" class="productName">Rice Kheer</h3>
+            <h6 class="rupee"> &#8377;<span class="priceValue">150</span></h6>
+        </div>
+        <p>Rice, Meethi, Indian Dessert</p>
+        <div class="star-4">
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+        </div>
+        <div class="btn-cards">
+            <button class="addToCart" data-product-id="16">Order Now</button>
+        </div>
+    </div>
+
+</div>
+
+<div class="foodRow"> <!--parent div-->
+
+    <div class="cards1 col-4 product-under"> <!--child div-->
+        <div class="foodImage">
+            <img src="food_images/Beverages/Khulhad Chai.jpg">
+        </div>
+        <div class="namePrice">
+            <h3 class="productName">Khulhad Chai</h3>
+            <h6 class="rupee"> &#8377;<span class="priceValue">50</span></h6>
+        </div>
+        <p>karak Masala Chai, Indian Drink</p>
+        <div class="star-4">
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+        </div>
+        <div class="btn-cards">
+            <button class="addToCart" data-product-id="17">Order Now</button>
+        </div>
+    </div>
+
+    <div class="cards1 col-4 product-under"> <!--child div-->
+        <div class="foodImage">
+            <img src="food_images/Beverages/coffee.png">
+        </div>
+        <div class="namePrice">
+            <h3 class="productName">Espresso Coffee</h3>
+            <h6 class="rupee"> &#8377;<span class="priceValue">70</span></h6>
+        </div>
+        <p>KFC, FastFood, CrispyCrunch, NonVegg</p>
+        <div class="star-3">
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+        </div>
+        <div class="btn-cards">
+            <button class="addToCart" data-product-id="18">Order Now</button>
+        </div>
+    </div>
+
+    <div class="cards1 col-4 product-under"> <!--child div-->
+        <div class="foodImage">
+            <img src="food_images/Beverages/juice.jpg">
+        </div>
+        <div class="namePrice">
+            <h3 class="productName">Fruit Juices</h3>
+            <h6 class="rupee"> &#8377;<span class="priceValue">80</span></h6>
+        </div>
+        <p>Different Fruit Juices, Healthy, Packof4</p>
+        <div class="star-3">
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+        </div>
+        <div class="btn-cards">
+            <button class="addToCart" data-product-id="19">Order Now</button>
+        </div>
+    </div>
+
+    <div class="cards1 col-4 product-under"> <!--child div-->
+        <div class="foodImage">
+            <img src="food_images/Beverages/Chocolate-Shake.jpg">
+        </div>
+        <div class="namePrice">
+            <h3 class="productName">Chocolate Shake</h3>
+            <h6 class="rupee"> &#8377;<span class="priceValue">150</span></h6>
+        </div>
+        <p>Choclatety, Cold, Delicious, Sweet</p>
+        <div class="star-5">
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+            <li class="fa-solid fa-star"></li>
+        </div>
+        <div class="btn-cards">
+            <button class="addToCart" data-product-id="20">Order Now</button>
+        </div>
+    </div>
+</div>
+<br>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="ta-c">
+                <br>
+                <img src="BlissBite-modified.png" alt="blissbite" class="img-1">
+                <h1>BlissBite</h1>
+            </div>
+            <div class="flex">
+                <div class="footer-col">
+                    <h4>Policies</h4>
+                    <ul>
+                        <li><a href="#">privacy policy </a></li>
+                        <li><a href="#">cookie policy</a></li>
+                        <li><a href="#">advertising policy</a></li>
+                        <li><a href="#">terms of use</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Who we are</h4>
+                    <ul>
+                        <li><a href="#">contact us</a></li>
+                        <li><a href="#">about our Food App</a></li>
+                        <li><a href="#">More info</a></li>
+                        <li><a href="#">source</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Top brand with us</h4>
+                    <ul>
+                        <li><a href="#">Burger King</a></li>
+                        <li><a href="#">Pizza Hut</a></li>
+                        <li><a href="#">Haldiram</a></li>
+                        <li><a href="#">Know more</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social">
+                <h4>Follow us</h4>
+                <br>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="hs">
+                <h4>At BlissBite, we pride ourselves on serving only the highest quality ingredients, sourced
+                    from each well-known brands and producers. Dish from each brands serve food with care and
+                    precision, blending flavors & textures. From our signature dishes to our daily specials, everything
+                    we serve is made with the same commitment to quality and flavor. So sit back, relax, and let us
+                    serve your happiness at your doorsteps.</h4>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascript/shopCart.js"></script>
+    <script src="javascript/addToCart.js"></script>
+    <script src="javascript/javascript.js"></script>
+
+   </body>
+</html>
