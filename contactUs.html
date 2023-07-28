@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlissBite</title>
+    <link rel="stylesheet" href="CSS/about_contactNavBar.css">
+    <link rel="stylesheet" href="CSS/delivery.css">
+    <link rel="stylesheet" href="CSS/contactUs.css">
+    <link rel="stylesheet" href="fonticon/css/all.css">
+    <link rel="stylesheet" href="CSS/popup.css">
+    <link rel="stylesheet" href="phoneCSS/about_contactNavPhone.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="BlissBite/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="BlissBite/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="BlissBite/favicon-16x16.png">
+    <link rel="manifest" href="BlissBite/site.webmanifest">
+    <link rel="mask-icon" href="BlissBite/safari-pinned-tab.svg" color="#5bbad5">
+
+</head>
+
+<body>
+    <div class="container" id="blur">
+        <div class="contain">
+            <nav id="nav">
+                <img class="logo" src="BlissBite-modified.png" alt="BlissBite">
+                <input type='checkbox' id='check' />
+                <label for="check" class="open-Menu"><i class="fas fa-bars"></i></label>
+                <span class="menu">
+                    <div id="marker"></div>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                    <a href="index.html">Home</a><hr>
+                    <a href="service.html">Services</a> <hr>
+                    <a href="aboutUs.html">About Us</a> <hr>
+                    <a href="contactUs.html">Contact Us</a> <hr>
+                    <a href="Login.html">Log in</a> <hr>
+                    <a href="signUp.html">Sign up</a>
+                </span>
+            </nav>
+        </div>
+        <div class="contact">
+            <h1>CONTACT US</h1>
+        </div>
+
+        <div class="container-2">
+            <div class="main-cards">
+                <div class="row">
+                    <!-- contact details-->
+                    <div class="cards col-3">
+                        <div class="details">
+                            <div class="content">
+                                <div class="img-0">
+                                    <img src="Bg/phone call.jpeg" alt="phone call">
+                                </div>
+                                <div class="para">
+                                    <p>123-456-7890</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <div class="img-0">
+                                    <img src="Bg/email.jpeg" alt="email">
+                                </div>
+                                <div class="para">
+                                    <p>xxxx@gmail.com </p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <div class="img-0">
+                                    <img src="Bg/location.jpg" alt="location" style="margin-top: 20px;">
+                                </div>
+                                <div class="para">
+                                    <p>123 Anywhere, St. Any</p>
+                                    <p>City,ST 12345</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <div class="img-0">
+                                    <img src="Bg/browser.jpg" alt="browser">
+                                </div>
+                                <div class="para">
+                                    <p>www.BlissBite.com</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <div class="img-0">
+                                    <img src="Bg/instagram.png" alt="browser">
+                                </div>
+                                <div class="para">
+                                    <p>BlissBite World</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- delivery boy-->
+                    <div class="cards col-new">
+                        <div class="delivery">
+                            <img src="Bg/delivery_boy.png" alt="delivery boy">
+                        </div>
+                    </div>
+
+                    <!-- feedback form -->
+                    <div class="cards col-3">
+                        <form action="#" name="myForm" class="form" onsubmit="toggle(); return formValidate()" method="post" id="form">
+                            <div class="info">
+                                <h2 class="ta-c">Feedback</h2>
+                                <input id="name" type="text" name="name" required  placeholder="Name" size="20px">
+                                <br>
+                                <br>
+                                <input id="email" type="text" name="email" required placeholder="Email-id">
+                                <br>
+                                <br>
+                                <input id="phone" type="text" name="phone" required placeholder="Phone number">
+                                <br>
+                                <br>
+                                <textarea id="des" name="des" cols="50" rows="10" required placeholder="Feedback"></textarea>
+                                <br>
+                                <br>
+                                <div>
+                                    <button onclick="" class="btn2" type="submit" value="submit" >Submit</button>
+                                    <!-- toggle() -->
+                                </div>
+                            </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer" style="margin-top: -50px;">
+            <div class="container-footer">
+                <div class="ta-c">
+                    <br>
+                    <img src="BlissBite-modified.png" alt="blissbite" class="img-1">
+                    <h1>BlissBite</h1>
+                </div>
+                <div class="flex">
+                    <div class="footer-col">
+                        <h4>Policies</h4>
+                        <ul>
+                            <li><a href="#">privacy policy </a></li>
+                            <li><a href="#">cookie policy</a></li>
+                            <li><a href="#">advertising policy</a></li>
+                            <li><a href="#">terms of use</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Who we are</h4>
+                        <ul>
+                            <li><a href="#">contact us</a></li>
+                            <li><a href="#">about our Food App</a></li>
+                            <li><a href="#">More info</a></li>
+                            <li><a href="#">source</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Top brand with us</h4>
+                        <ul>
+                            <li><a href="#">Burger King</a></li>
+                            <li><a href="#">Pizza Hut</a></li>
+                            <li><a href="#">Haldiram</a></li>
+                            <li><a href="#">Know more</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social">
+                    <h4>Follow us</h4>
+                    <br>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="hs">
+                    <h4>At BlissBite, we pride ourselves on serving only the highest quality ingredients, sourced
+                        from each well-known brands and producers. Dish from each brands serve food with care and
+                        precision, blending flavors & textures. From our signature dishes to our daily specials,
+                        everything
+                        we serve is made with the same commitment to quality and flavor. So sit back, relax, and let
+                        us
+                        serve your happiness at your doorsteps.</h4>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="popup">
+        <img src="Bg/blue_tick.jpg" alt="tick">
+        <h2>Thank You !!</h2>
+        <p>Your feedback has been recorded and will help us to get better !!</p>
+        <button onclick="toggle()">OK</button>
+    </div>
+
+    <script src="javascript/javascript.js"></script>
+</body>
+
+</html>
