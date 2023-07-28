@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 20px;
+    
+}
+.log_head {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+}
+.log_head h1 {
+    margin-left: 40%;
+    margin-bottom: 10px;
+}
+.log_head a {
+    margin-right: 4%;
+    font-size: 1.7rem;
+    color: black ;
+}
+.form-container {
+    width: 30%;
+    margin: 0 auto;
+    box-shadow: 2px 3px 5px grey;
+        border: 2px solid transparent;
+    border-radius: 10px;
+    margin-top: 9%;
+    
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+
+
+.form-group input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-group .eye-icon {
+    position: relative;
+    top: 70%;
+    right: 30px;
+    cursor: pointer; 
+}
+.form-group .eyeIcon {
+    position: relative;
+    top: 70%;
+    right: 30px;
+    cursor: pointer; 
+}
+
+
+.fg h4 {
+    text-align: center;
+    color: rgb(44, 44, 205);
+    padding-bottom: 10px;
+}
+
+.fg h3 {
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+    padding-bottom: 10px;
+}
+
+.form-group button {
+    width: 85%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: rgb(72, 72, 249);;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.form-group button svg {
+    font-size: 1.2rem;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+

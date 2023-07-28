@@ -1,0 +1,136 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Times New Roman', Times, serif;
+}
+.container {
+  width: 100%;
+  max-width: 1950px;
+  overflow: hidden;
+height: 75vh;
+/* background-color: yellow; */
+margin-top: 10px;
+}
+
+.container .main-cards {
+  width: 200%;
+  transition: all 1s ease ;
+  display: flex;
+  /* background-color: green; */
+  
+}
+#two:checked ~ .main-cards {
+  margin-left: -100%;
+}
+
+#four:checked ~ .main-cards {
+  margin-left: -100%;
+}
+
+.row
+		{
+          display: flex;
+          padding-left: 15px;
+          padding-right: 15px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+		}
+		.col-6 /* screen divided into 4 i.e 25% */
+		{
+          width: 16.66%;
+		}
+        .cards
+        {
+          border: 1px solid transparent;
+          margin-left: 10px;
+          text-align: center;
+          cursor: pointer;
+
+        
+        }
+        .text-center
+        { 
+        	text-align: center;
+          /* background-color: aqua; */
+        }
+        .text
+        { 
+        	text-align: center;
+        }
+        .image {
+            width: 100%;
+            height: 90%;
+            padding: 15px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            transition-duration: -3s;
+            transform: 2s;
+        }
+        .image1 {
+          width: 100%;
+          height: 70%;
+          padding: 15px;
+          border-radius: 50%;
+          object-fit: cover;
+          object-position: center;
+          transition-duration: -3s;
+          transform: 2s;
+      }
+        .cards img:hover {
+              transform: translateY(-10px);
+        }
+        .image:active {
+            transform: translateY(10px);
+        }
+        .button {
+          display: flex;
+          margin: 40px;
+          justify-content: center;
+          padding-top: -30px;
+          margin-top: 60px;
+          /* background-color: rebeccapurple; */
+        }
+        .button label {
+          height: 15px;
+          width: 15px;
+          background-color: rgb(197, 194, 194);
+          margin: 0 4px;
+          border-radius: 20px;
+          transition: all 0.5s ease;
+          cursor: pointer;
+        }
+        .button label.active {
+          width: 35px;
+        }
+        #one:checked ~ .button label.one {
+          width: 35px;
+        }
+        #two:checked ~ .button label.two {
+          width: 35px;
+        }     
+         #two:checked ~ .button label.one {
+          width: 15px;
+        }
+        #one:checked ~ .button label.two {
+          width: 15px;
+        }
+
+        #three:checked ~ .button label.three { 
+          width: 35px;
+        }
+        #four:checked ~ .button label.four { 
+          width: 35px;
+        }     
+         #four:checked ~ .button label.three { 
+          width: 15px;
+        }
+        #three:checked ~ .button label.four { 
+          width: 15px;
+        }
+
+        input[type="radio"]{
+          display: none;
+        }
